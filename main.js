@@ -13,7 +13,7 @@ app.use('/views',express.static(__dirname+'/views'));
 
 //renderizacion
 app.get('/',(req, res)=>{
-    res.sendFile('index.html',{root:__dirname})
+    res.sendFile('views/index.html',{root:__dirname})
 });
 //mat
 app.post('/mat',(req,res, next)=>{
