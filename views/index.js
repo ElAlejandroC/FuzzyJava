@@ -2,11 +2,13 @@
 var arregloP = []
 
 
-//function sintomas(){
-//    axios
-//    .get()
-//    .then()
-//}
+
+function tarjeta(){
+    document.getElementById('ventana').style.display ='block';
+}
+function cerrar(){
+    document.getElementById('ventana').style.display ='none';
+}
 
 function validar(){
     //sintomas
@@ -109,8 +111,8 @@ function validar(){
         method: 'post',
         url:'http://localhost:3000/routes/mat/recibir',
         data:{
-            arreglo_f:arreglo,
-            arreglo_P:arregloP
+            answers:arreglo,
+            diseases:arregloP
         }
     }).then(function(res){
         console.log(res);
@@ -119,7 +121,8 @@ function validar(){
         alert("Ocurrio un pedo")
         console.log(err)
     })
-
+    tarjeta()
+    tomarPapu()
 }
 var bandera = 1
 var tituloDin = document.getElementById('tituloDin').value
@@ -131,6 +134,14 @@ function friend(){
     }else{
         document.getElementById('tituloDin').innerHTML=`<h4>Examen General</h4>`
         document.getElementById('formulario').style.display ='none';
-        //arregloP=[0,0,0,0,0,0,0,0,0,0]
+        //arregloP:[0,0,0,0,0,0,0,0,0,0]
     }
+}
+
+
+async function tomarPapu(){
+    var recibe = 0;
+    const results = await axios.post("http://localhost:3000/routes/mat/recibir",{data:recibe},
+    )
+    console.log(results)
 }

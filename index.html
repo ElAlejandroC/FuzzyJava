@@ -45,6 +45,7 @@
                 <img src="views/experto.svg" alt="">
             </div>
         </div>
+
         <div class="testApp">
             <div class="pregunta">
                 <h2>
@@ -134,11 +135,11 @@
         <div class="testApp">
             <div class="pregunta">
                 <h2>
-                    ¿Presentas fiebre a menudo?
+                    ¿Tu vista esta deteriorada?
                 </h2>
                 <br>
-                <label for="fiebre">Describe la intensidad del 1 al 10</label>
-                <select name="fiebre" id="fiebre">
+                <label for="vision">Describe la intensidad del 1 al 10</label>
+                <select name="vision" id="vision">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -425,6 +426,11 @@
             </label>
         </div>
 
+        <div class="ventana" id="ventana">
+            <div class="result" id="result"></div>
+            <button onclick="cerrar()" class="validar">Cerrar</button>
+        </div>
+        
         <div class="testApp">
             <div class="selector">
                 <form action="" class="formulario" id="formulario">
@@ -468,8 +474,8 @@
         <div class="testApp">
             <input type="button" value="Validar" class="validar" onclick="validar()" onclick="genTarjeta()">
         </div>
+        <br><br><br><br>
     </div>
     <script src="views/index.js"></script>
-    <script src="views/especifico.js"></script>
 </body>
 </html>

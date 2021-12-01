@@ -105,7 +105,7 @@ img{
     border-radius: 20px;
     cursor: pointer;
     position: relative;
-    top: -2rem;
+    top: 2rem;
     border: none;
     box-shadow: 7px 7px 16px -6px rgba(0,0,0,0.75);
     transition: .3s;
@@ -185,5 +185,29 @@ img{
 .formulario input[type="radio"]:checked + label{
     background: rgba(153, 0, 255, 0.671);
     color:rgb(255, 255, 255);
+}
+.ventana{
+    background: rgb(255, 255, 255);
+    width: 80vw;
+    height: 60vh;
+    text-align: center;
+    border-radius: 25px;
+    position: absolute;
+    left: 10vw;
+    top: 20vh;
+    display: none;
+    box-shadow: 7px 7px 16px -6px rgba(0,0,0,0.75);
+    text-align: center;
+}
+.ventana h1{
+    color:rgba(153, 0, 255, 0.671);
+}
+.ventana h2{
+   color: rgba(0, 0, 0, 0.651);
+   position: relative;
+   margin-top: 1rem;
+   font-size: 20px;
+   width: 80%;
+   left: 10%;
 }
 
