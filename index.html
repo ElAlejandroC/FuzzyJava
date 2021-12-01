@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="views/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Autoinmune</title>
+</head>
+<body>
+    <div class="mainApp">
+        <div class="top">
+            <h1 class="logo">10<span class="ben">Enfermedades</span></h1>
+            <div class="opciones">
+                <ul>
+                    <li><a href="">Test</a></li>
+
+                    <li><a href="">Tipos de enfermedades</a></li>
+
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="greenBox">
+            <h1 class="title">Test de enfermedades autoinmunes</h1>
+            <div class="rec">
+                <h2>
+                    Sencillo test de 5 minutos
+                </h2>
+                <img src="views/tiempo.svg">
+            </div>
+            <div class="rec">
+                <h2>
+                    Intenta ser lo mas sintero posible
+                </h2>
+                <img src="views/correcto.svg" alt="">
+            </div>
+            <div class="rec">
+                <h2>
+                    Consulta con un experto
+                </h2>
+                <img src="views/experto.svg" alt="">
+            </div>
+        </div>
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Que tan intenso es tu cansancio?
+                </h2>
+                <br>
+                <label for="cansancio">Describe la intensidad del 1 al 10</label>
+                <select name="cansancio" id="cansancio">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Que tan intenso es el dolor articular?
+                </h2>
+                <br>
+                <label for="articulacion">Describe la intensidad del 1 al 10</label>
+                <select name="articulacion" id="articulacion">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Presentas fiebre a menudo?
+                </h2>
+                <br>
+                <label for="fiebre">Describe la intensidad del 1 al 10</label>
+                <select name="fiebre" id="fiebre">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    Haz presentado inflamacion en tus glandulas
+                </h2>
+                <br>
+                <label for="glandulas">Describe la intensidad del 1 al 10</label>
+                <select name="glandulas" id="glandulas">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Presentas fiebre a menudo?
+                </h2>
+                <br>
+                <label for="fiebre">Describe la intensidad del 1 al 10</label>
+                <select name="fiebre" id="fiebre">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Haz presentado hinchazon zonas glandurales?
+                </h2>
+                <br>
+                <label for="glandulas">Describe la intensidad del 1 al 10</label>
+                <select name="glandulas" id="glandulas">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Presentas dolor en alguna de tus extremidades?
+                </h2>
+                <br>
+                <label for="extremidades">Describe la intensidad del 1 al 10</label>
+                <select name="extremidades" id="extremidades">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Haz presentado problemas de vision?
+                </h2>
+                <br>
+                <label for="vision">Describe la intensidad del 1 al 10</label>
+                <select name="vision" id="vision">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Que tan frecuente tienes espasmos doloros?
+                </h2>
+                <br>
+                <label for="espasmos">Describe la intensidad del 1 al 10</label>
+                <select name="espasmos" id="espasmos">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Haz presentado rigidez articular?
+                </h2>
+                <br>
+                <label for="rigidez">Describe la intensidad del 1 al 10</label>
+                <select name="rigidez" id="rigidez">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Haz presentado caida de cabello cronica?
+                </h2>
+                <br>
+                <label for="cabello">Describe la intensidad del 1 al 10</label>
+                <select name="cabello" id="cabello">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Tienes dificultades al tragar?
+                </h2>
+                <br>
+                <label for="tragar">Describe la intensidad del 1 al 10</label>
+                <select name="tragar" id="tragar">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Haz presentado dificultad al respirar?
+                </h2>
+                <br>
+                <label for="respirar">Describe la intensidad del 1 al 10</label>
+                <select name="respirar" id="respirar">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Haz presentado sequedad ocular?
+                </h2>
+                <br>
+                <label for="ojos">Describe la intensidad del 1 al 10</label>
+                <select name="ojos" id="ojos">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Haz presentado tos seca?
+                </h2>
+                <br>
+                <label for="tos">Describe la intensidad del 1 al 10</label>
+                <select name="tos" id="tos">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Haz presentado vomitos?
+                </h2>
+                <br>
+                <label for="vomitos">Describe la intensidad del 1 al 10</label>
+                <select name="vomitos" id="vomitos">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="testApp">
+            <div class="pregunta">
+                <h2>
+                    ¿Haz presentado diarrea cronica?
+                </h2>
+                <br>
+                <label for="diarrea">Describe la intensidad del 1 al 10</label>
+                <select name="diarrea" id="diarrea">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+        <div class="testApp">
+
+            <input type="checkbox" id="checkB" class="checkB" onclick="friend()">
+            <label for="checkB" class="label">
+                <div id="tituloDin"><h4>Examen General</h4></div>
+                <div class="ball"></div>
+            </label>
+        </div>
+
+        <div class="testApp">
+            <div class="selector">
+                <form action="" class="formulario" id="formulario">
+                    <div class="radio">
+                        <h2>
+                            Tipos de enfermedades
+                        </h2>
+                        <input type="radio" name="diabetes" id="diabetes" class="wape">
+                        <label for="diabetes">Diabetes tipo 1</label>
+    
+                        <input type="radio" name="esclerosis" id="esclerosis" class="wape">
+                        <label for="esclerosis">Esclerosis múltiple</label>
+    
+                        <input type="radio" name="lupus" id="lupus">
+                        <label for="lupus">Lupus</label>
+    
+                        <input type="radio" name="miastenia" id="miastenia" class="wape">
+                        <label for="miastenia">Miastenia Gravis</label>
+    
+                        <input type="radio" name="espondielitis" id="espondielitis" class="wape">
+                        <label for="espondielitis">Espondielitis Anquilosante</label>
+    
+                        <input type="radio" name="artritis" id="artritis" class="wape">
+                        <label for="artritis">Artritis Reumatoide</label>
+    
+                        <input type="radio" name="addison" id="addison" class="wape">
+                        <label for="addison">Enfermedad de Addison</label>
+    
+                        <input type="radio" name="" id="tiroiditis" class="wape">
+                        <label for="tiroiditis">Tiroides de hasimoto</label>
+                        
+                        <input type="radio" name="sjorgren" id="sjorgen" class="wape">
+                        <label for="sjorgen">Síndrome de Sjorgren</label>
+    
+                        <input type="radio" name="celiaca" id="celiaca" class="wape">
+                        <label for="celiaca">Enfermedad celiaca</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="testApp">
+            <input type="button" value="Validar" class="validar" onclick="validar()" onclick="genTarjeta()">
+        </div>
+    </div>
+    <script src="views/index.js"></script>
+    <script src="views/especifico.js"></script>
+</body>
+</html>
