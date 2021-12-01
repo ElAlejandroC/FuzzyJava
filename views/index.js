@@ -102,7 +102,7 @@ function validar(){
     //envio
     axios({
         method: 'post',
-        url:'http://localhost:3000/routes/mat/recibir',
+        url:'/mat',
         data:{
             answers:arreglo,
             diseases:arregloP

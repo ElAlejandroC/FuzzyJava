@@ -13,6 +13,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "next.js": "^1.0.3",
     "numjs": "^0.16.1"
   }
 }
