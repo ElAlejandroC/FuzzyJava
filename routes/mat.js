@@ -114,7 +114,8 @@ mat.post("/recibir",async(req,res,next)=>{
        }
    }
    console.log("resultado final", resultarray)
-
+   
+   return res.send(resultarray.selection.data)
   //var arregloo = resultarray.tolist()
   //console.log(arregloo)
 

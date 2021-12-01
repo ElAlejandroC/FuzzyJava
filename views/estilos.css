@@ -60,19 +60,24 @@ body{
     justify-content: center;
 }
 .title{
-    position: relative;
-    left: 25vw;
-    top: 2rem;
-    font-size: 2em;
-    font-weight: bolder;
-    color: #fff;
+    position: absolute;
+    left: 40vw;
+    top: 6rem;
+    font-size: 1em;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.651);
+}
+.lili{
+    color:rgba(221, 0, 203, 0.733);
+}
+.alejandro{
+    color: rgba(0, 212, 28, 0.925)(0, 212, 28, 0.822);
 }
 .rec{
     width: 15rem;
     height: 12rem;
     position: relative;
     margin-left: 2rem;
-    right:15rem;
     top: 8rem;
     background: rgba(255, 255, 255, 0.863);
     text-align: center;
@@ -189,25 +194,32 @@ img{
 .ventana{
     background: rgb(255, 255, 255);
     width: 80vw;
-    height: 60vh;
+    height: 80vh;
     text-align: center;
     border-radius: 25px;
-    position: absolute;
+    position: relative;
     left: 10vw;
     top: 20vh;
-    display: none;
     box-shadow: 7px 7px 16px -6px rgba(0,0,0,0.75);
     text-align: center;
+    margin-top: 3rem;
 }
 .ventana h1{
     color:rgba(153, 0, 255, 0.671);
+    position: relative;
+    top:1rem
 }
 .ventana h2{
-   color: rgba(0, 0, 0, 0.651);
+   color: rgba(0, 88, 189, 0.973);
    position: relative;
-   margin-top: 1rem;
+   margin-top: 2rem;
    font-size: 20px;
-   width: 80%;
-   left: 10%;
+}
+.ventana h3{
+    color: rgba(17, 17, 17, 0.842);
+    position: relative;
+    font-size: 15px;
+    width: 80%;
+    left: 10%;
 }
 
