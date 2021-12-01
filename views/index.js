@@ -109,8 +109,6 @@ function validar(){
         }
     }).then(function(res){
         console.log(res.data);
-        alert("Respuestas enviadas con exito")
-
         var dis = res.data
         var tam = res.data.length
         console.log(tam)
@@ -251,7 +249,7 @@ function validar(){
                     let newElement8 = document.createElement('div');
                     newElement8.classList.add("ventana");
                     newElement8.innerHTML = `
-                    <h1>sindrome de sjogren</h1>
+                    <h1>sindrome de Sjogren</h1>
                     <h2>Resumen<h2>
                     <h3>El Síndrome de Sjögren es una enfermedad autoinmune en la que el sistema inmunitario del organismo reacciona erróneamente contra los tejidos glandulares propios, tales como las glándulas salivales y lacrimales.</h3>
                     <h2>Sintomas<h2>
